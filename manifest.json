@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "T9",
+    "description": "",
+    "version": "1.0",
+    "browser_action": {      
+        "default_popup": "./html/index.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://*/*", "http://*/*"],
+            "js": ["./js/t9.js"],
+            "css": ["./css/style.css", "./css/menu.css"],
+            "run_at": "document_end"
+        }
+    ],
+	"icons": { "16": "./img/logo.png",
+               "48": "./img/logo.png",
+               "128": "./img/logo.png" }	   
+}

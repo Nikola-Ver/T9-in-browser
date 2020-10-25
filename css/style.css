@@ -1,0 +1,101 @@
+:root {
+  --font-size: 14px;
+  --font-size-active: 14px;
+  --selection-background-color: rgba(0, 110, 255, 0.5);
+  --selection-font-color: rgb(255, 255, 255);
+  --hint-background-color: rgb(70, 70, 70);
+  --hint-background-active-color: rgb(120, 120, 120);
+  --hint-font-color: white;
+  --hint-font-active-color: white;
+  --shadow-hint: 0 0 5px black;
+  --selection-shadow: none;
+}
+
+#entry-field_by-Nikola-Ver {
+  position: fixed;
+  z-index: 99999999999999;
+}
+
+#contain_by-Nikola-Ver {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+#text-field_by-Nikola-Ver {
+  background: transparent;
+  background-color: transparent !important;
+  margin: 0;
+  outline-width: 0;
+  color: black;
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+#text-field_by-Nikola-Ver::selection {
+  background: var(--selection-background-color);
+  text-shadow: var(--selection-shadow);
+  -webkit-text-fill-color: var(--selection-font-color);
+}
+
+#text-field_by-Nikola-Ver::-webkit-scrollbar {
+  background: transparent;
+}
+
+#hint-field_by-Nikola-Ver {
+  background: var(--hint-background-color);
+  box-shadow: var(--shadow-hint);
+  position: absolute;
+  height: fit-content;
+  width: max-content;
+  background-size: contain;
+}
+
+.word-to-hint:hover {
+  background: var(--hint-background-active-color);
+  color: var(--hint-font-active-color);
+  font-size: var(--font-size-active);
+  user-select: none;
+}
+
+.word-to-hint {
+  cursor: pointer;
+  padding: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: var(--hint-font-color);
+  font-size: var(--font-size);
+}
+
+#active-hint {
+  background: var(--hint-background-active-color);
+  color: var(--hint-font-active-color);
+  font-size: var(--font-size-active);
+}
+
+#base-of-words_by-Nikola-Ver {
+  display: none;
+}
+
+#on-speech-hint_by-Nikola-Ver {
+  clip-path: polygon(0 0, 100% 0, 95% 50%, 100% 100%, 0 100%, 5% 50%);
+  position: fixed;
+  z-index: 99999999999999;
+  top: 35%;
+  left: 35%;
+  width: 30%;
+  height: fit-content;
+  text-align: center;
+  background: var(--hint-background-active-color);
+  color: var(--hint-font-active-color);
+  box-shadow: var(--shadow-hint);
+  font-size: 26px;
+  padding: 10px;
+  padding-left: 2%;
+  padding-right: 2%;
+  transition: 1s background;
+  opacity: 0.8;
+}
