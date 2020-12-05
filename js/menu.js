@@ -1,1 +1,167 @@
-const _0x3129=['transparent','active-font-color-input_by-Nikola-Ver','main-color-1_by-Nikola-Ver','setProperty','onkeyup','hidden-overflow_by-Nikola-Ver','sendMessage','--selection-background-color','--main-color-2','--font-size-active','documentElement','active-font-size-input_by-Nikola-Ver','value','shadow-hint-input_by-Nikola-Ver','getElementById','click','quantity-hints-input_by-Nikola-Ver','--hint-font-active-color','change','quantityHints','addEventListener','selection-font_by-Nikola-Ver','tabs','active-background-input_by-Nikola-Ver','--selection-font-color','background-input_by-Nikola-Ver','--hint-background-active-color','info_by-Nikola-Ver','add-new-base_by-Nikola-Ver','forEach','onclick','--hint-font-color','addNewBase','className','getItem','selection-shadow-input_by-Nikola-Ver','style','setItem','query','switch','prompt-field_by-Nikola-Ver','main-color-2_by-Nikola-Ver','selection-background_by-Nikola-Ver','--selection-shadow'];(function(_0x4626cb,_0x31299c){const _0x2f380d=function(_0x1d8e89){while(--_0x1d8e89){_0x4626cb['push'](_0x4626cb['shift']());}};_0x2f380d(++_0x31299c);}(_0x3129,0xbb));const _0x2f38=function(_0x4626cb,_0x31299c){_0x4626cb=_0x4626cb-0x0;let _0x2f380d=_0x3129[_0x4626cb];return _0x2f380d;};const _0x3f9f15=_0x2f38,colorPanel=document['getElementById']('color-panel_by-Nikola-Ver'),TRANSPARENT=_0x3f9f15('0x21');let currentColor=null;const arrayOfCssValues=['--main-color-1',_0x3f9f15('0x29'),_0x3f9f15('0x28'),_0x3f9f15('0xd'),_0x3f9f15('0xf'),'--hint-background-color',_0x3f9f15('0x6'),_0x3f9f15('0x14'),'--font-size',_0x3f9f15('0x2a'),'--shadow-hint',_0x3f9f15('0x8'),_0x3f9f15('0x20')];let valuesToForward={'--main-color-1':null,'--main-color-2':null,'--selection-background-color':null,'--selection-font-color':null,'--hint-background-active-color':null,'--hint-background-color':null,'--hint-font-active-color':null,'--hint-font-color':null,'--font-size':null,'--font-size-active':null,'--shadow-hint':null,'quantityHints':null,'--selection-shadow':null};arrayOfCssValues[_0x3f9f15('0x12')](_0x1d8e89=>{const _0x1f7d51=_0x3f9f15;localStorage[_0x1f7d51('0x17')](_0x1d8e89)&&(document[_0x1f7d51('0x2b')][_0x1f7d51('0x19')][_0x1f7d51('0x24')](_0x1d8e89,localStorage[_0x1f7d51('0x17')](_0x1d8e89)),valuesToForward[_0x1d8e89]=localStorage['getItem'](_0x1d8e89));}),colorPanel[_0x3f9f15('0x9')](_0x3f9f15('0x7'),_0x255bba=>{const _0x4e3786=_0x3f9f15;document[_0x4e3786('0x2b')][_0x4e3786('0x19')][_0x4e3786('0x24')](currentColor,colorPanel[_0x4e3786('0x1')]),localStorage['setItem'](currentColor,colorPanel[_0x4e3786('0x1')]),valuesToForward[currentColor]=colorPanel['value'],forwardValues();});function changeColor(_0x2090d2){const _0x295895=_0x3f9f15;currentColor=_0x2090d2,colorPanel[_0x295895('0x4')]();}function changeBackground(_0x3009f2,_0x3d8ff0){const _0x170d6d=_0x3f9f15;document['documentElement'][_0x170d6d('0x19')][_0x170d6d('0x24')](_0x3009f2,_0x3d8ff0),localStorage[_0x170d6d('0x1a')](_0x3009f2,_0x3d8ff0),valuesToForward[_0x3009f2]=_0x3d8ff0,forwardValues();}const mainColor1=document['getElementById'](_0x3f9f15('0x23')),mainColor2=document[_0x3f9f15('0x3')](_0x3f9f15('0x1e')),selectionBackground=document[_0x3f9f15('0x3')](_0x3f9f15('0x1f')),selectionFont=document[_0x3f9f15('0x3')](_0x3f9f15('0xa')),activeBackgroundInput=document[_0x3f9f15('0x3')](_0x3f9f15('0xc')),backgroundInput=document[_0x3f9f15('0x3')](_0x3f9f15('0xe')),activeFontColor=document[_0x3f9f15('0x3')](_0x3f9f15('0x22')),fontColor=document[_0x3f9f15('0x3')]('font-color-input_by-Nikola-Ver'),fontSize=document[_0x3f9f15('0x3')]('font-size-input_by-Nikola-Ver'),activeFontSize=document['getElementById'](_0x3f9f15('0x0')),quantityHintsInput=document[_0x3f9f15('0x3')](_0x3f9f15('0x5')),shadowHint=document['getElementById'](_0x3f9f15('0x2')),addNewBase=document[_0x3f9f15('0x3')](_0x3f9f15('0x11')),switcher=document['getElementById']('switch_by-Nikola-Ver'),info=document['getElementById'](_0x3f9f15('0x10')),root=document[_0x3f9f15('0x3')]('root_by-Nikola-Ver'),promptField=document[_0x3f9f15('0x3')](_0x3f9f15('0x1d')),selectionShadowInput=document[_0x3f9f15('0x3')](_0x3f9f15('0x18'));promptField[_0x3f9f15('0x13')]=_0x2a5c6f=>{const _0x5985fa=_0x3f9f15;root[_0x5985fa('0x16')]='',promptField[_0x5985fa('0x16')]='not-active-prompt-field_by-Nikola-Ver';},info['onclick']=_0x52121d=>{const _0x9440b=_0x3f9f15;root[_0x9440b('0x16')]=_0x9440b('0x26'),promptField[_0x9440b('0x16')]='';},switcher[_0x3f9f15('0x13')]=_0xf38428=>{const _0x5b674f=_0x3f9f15;chrome['tabs'][_0x5b674f('0x1b')]({'active':!![],'currentWindow':!![]},_0x502753=>{const _0x42730d=_0x5b674f;chrome[_0x42730d('0xb')][_0x42730d('0x27')](_0x502753[0x0]['id'],{'switch':_0x42730d('0x1c')});});},addNewBase[_0x3f9f15('0x13')]=_0x2ede75=>{const _0x58b8c9=_0x3f9f15;chrome[_0x58b8c9('0xb')]['query']({'active':!![],'currentWindow':!![]},_0x479e40=>{const _0x1a9c4a=_0x58b8c9;chrome['tabs'][_0x1a9c4a('0x27')](_0x479e40[0x0]['id'],{'addNewBase':_0x1a9c4a('0x15')});});},mainColor1[_0x3f9f15('0x13')]=_0x312258=>{changeColor(arrayOfCssValues[0x0]);},mainColor2['onclick']=_0x5bfe0d=>{changeColor(arrayOfCssValues[0x1]);},selectionBackground[_0x3f9f15('0x13')]=_0x3dca62=>{const _0x13e52f=_0x3f9f15;currentColor=arrayOfCssValues[0x2],document[_0x13e52f('0x2b')][_0x13e52f('0x19')]['setProperty'](currentColor,TRANSPARENT),localStorage[_0x13e52f('0x1a')](currentColor,TRANSPARENT),valuesToForward[currentColor]=TRANSPARENT,forwardValues();},selectionBackground['ondblclick']=_0x336eff=>{changeColor(arrayOfCssValues[0x2]);},selectionFont[_0x3f9f15('0x13')]=_0x49baf5=>{changeColor(arrayOfCssValues[0x3]);},activeBackgroundInput[_0x3f9f15('0x25')]=_0x38efd8=>{const _0x9592ee=_0x3f9f15;changeBackground(arrayOfCssValues[0x4],activeBackgroundInput[_0x9592ee('0x1')]);},backgroundInput['onkeyup']=_0x5e7f4d=>{const _0x103f05=_0x3f9f15;changeBackground(arrayOfCssValues[0x5],backgroundInput[_0x103f05('0x1')]);},activeFontColor['onkeyup']=_0x2579e5=>{const _0x15c2e7=_0x3f9f15;changeBackground(arrayOfCssValues[0x6],activeFontColor[_0x15c2e7('0x1')]);},fontColor[_0x3f9f15('0x25')]=_0x5599f2=>{changeBackground(arrayOfCssValues[0x7],fontColor['value']);},fontSize['onkeyup']=_0x251d1e=>{const _0xc8dc50=_0x3f9f15;changeBackground(arrayOfCssValues[0x8],fontSize[_0xc8dc50('0x1')]);},activeFontSize[_0x3f9f15('0x25')]=_0x32cad7=>{const _0x22de99=_0x3f9f15;changeBackground(arrayOfCssValues[0x9],activeFontSize[_0x22de99('0x1')]);},shadowHint[_0x3f9f15('0x25')]=_0x5ecfe5=>{const _0x12c6f9=_0x3f9f15;changeBackground(arrayOfCssValues[0xa],shadowHint[_0x12c6f9('0x1')]);},quantityHintsInput['onkeyup']=_0x4c5767=>{const _0x3f49e5=_0x3f9f15;valuesToForward['quantityHints']=quantityHintsInput['value'],localStorage[_0x3f49e5('0x1a')]('quantityHints',quantityHintsInput['value']),forwardValues();},selectionShadowInput[_0x3f9f15('0x25')]=_0x52c8e8=>{changeBackground(arrayOfCssValues[0xc],selectionShadowInput['value']);};function forwardValues(){const _0x5385d3=_0x3f9f15;chrome[_0x5385d3('0xb')][_0x5385d3('0x1b')]({'active':!![],'currentWindow':!![]},_0x247cc1=>{chrome['tabs']['sendMessage'](_0x247cc1[0x0]['id'],valuesToForward);});}forwardValues();
+const colorPanel = document.getElementById("color-panel_by-Nikola-Ver");
+const TRANSPARENT = "transparent";
+let currentColor = null;
+const arrayOfCssValues = [
+  "--main-color-1",
+  "--main-color-2",
+  "--selection-background-color",
+  "--selection-font-color",
+  "--hint-background-active-color",
+  "--hint-background-color",
+  "--hint-font-active-color",
+  "--hint-font-color",
+  "--font-size",
+  "--font-size-active",
+  "--shadow-hint",
+  "quantityHints",
+  "--selection-shadow",
+];
+let valuesToForward = {
+  "--main-color-1": null,
+  "--main-color-2": null,
+  "--selection-background-color": null,
+  "--selection-font-color": null,
+  "--hint-background-active-color": null,
+  "--hint-background-color": null,
+  "--hint-font-active-color": null,
+  "--hint-font-color": null,
+  "--font-size": null,
+  "--font-size-active": null,
+  "--shadow-hint": null,
+  quantityHints: null,
+  "--selection-shadow": null,
+};
+
+arrayOfCssValues.forEach((e) => {
+  if (localStorage.getItem(e)) {
+    document.documentElement.style.setProperty(e, localStorage.getItem(e));
+    valuesToForward[e] = localStorage.getItem(e);
+  }
+});
+
+colorPanel.addEventListener("change", (e) => {
+  document.documentElement.style.setProperty(currentColor, colorPanel.value);
+  localStorage.setItem(currentColor, colorPanel.value);
+  valuesToForward[currentColor] = colorPanel.value;
+  forwardValues();
+});
+
+function changeColor(color) {
+  currentColor = color;
+  colorPanel.click();
+}
+
+function changeBackground(name, value) {
+  document.documentElement.style.setProperty(name, value);
+  localStorage.setItem(name, value);
+  valuesToForward[name] = value;
+  forwardValues();
+}
+
+const mainColor1 = document.getElementById("main-color-1_by-Nikola-Ver");
+const mainColor2 = document.getElementById("main-color-2_by-Nikola-Ver");
+const selectionBackground = document.getElementById(
+  "selection-background_by-Nikola-Ver"
+);
+const selectionFont = document.getElementById("selection-font_by-Nikola-Ver");
+const activeBackgroundInput = document.getElementById(
+  "active-background-input_by-Nikola-Ver"
+);
+const backgroundInput = document.getElementById(
+  "background-input_by-Nikola-Ver"
+);
+const activeFontColor = document.getElementById(
+  "active-font-color-input_by-Nikola-Ver"
+);
+const fontColor = document.getElementById("font-color-input_by-Nikola-Ver");
+const fontSize = document.getElementById("font-size-input_by-Nikola-Ver");
+const activeFontSize = document.getElementById(
+  "active-font-size-input_by-Nikola-Ver"
+);
+const quantityHintsInput = document.getElementById(
+  "quantity-hints-input_by-Nikola-Ver"
+);
+const shadowHint = document.getElementById("shadow-hint-input_by-Nikola-Ver");
+const addNewBase = document.getElementById("add-new-base_by-Nikola-Ver");
+const switcher = document.getElementById("switch_by-Nikola-Ver");
+const info = document.getElementById("info_by-Nikola-Ver");
+const root = document.getElementById("root_by-Nikola-Ver");
+const promptField = document.getElementById("prompt-field_by-Nikola-Ver");
+const selectionShadowInput = document.getElementById(
+  "selection-shadow-input_by-Nikola-Ver"
+);
+
+promptField.onclick = (e) => {
+  root.className = "";
+  promptField.className = "not-active-prompt-field_by-Nikola-Ver";
+};
+info.onclick = (e) => {
+  root.className = "hidden-overflow_by-Nikola-Ver";
+  promptField.className = "";
+};
+switcher.onclick = (e) => {
+  chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+    chrome.tabs.sendMessage(tabs[0].id, { switch: "switch" });
+  });
+};
+addNewBase.onclick = (e) => {
+  chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+    chrome.tabs.sendMessage(tabs[0].id, { addNewBase: "addNewBase" });
+  });
+};
+mainColor1.onclick = (e) => {
+  changeColor(arrayOfCssValues[0]);
+};
+mainColor2.onclick = (e) => {
+  changeColor(arrayOfCssValues[1]);
+};
+selectionBackground.onclick = (e) => {
+  currentColor = arrayOfCssValues[2];
+  document.documentElement.style.setProperty(currentColor, TRANSPARENT);
+  localStorage.setItem(currentColor, TRANSPARENT);
+  valuesToForward[currentColor] = TRANSPARENT;
+  forwardValues();
+};
+selectionBackground.ondblclick = (e) => {
+  changeColor(arrayOfCssValues[2]);
+};
+selectionFont.onclick = (e) => {
+  changeColor(arrayOfCssValues[3]);
+};
+activeBackgroundInput.onkeyup = (e) => {
+  changeBackground(arrayOfCssValues[4], activeBackgroundInput.value);
+};
+backgroundInput.onkeyup = (e) => {
+  changeBackground(arrayOfCssValues[5], backgroundInput.value);
+};
+activeFontColor.onkeyup = (e) => {
+  changeBackground(arrayOfCssValues[6], activeFontColor.value);
+};
+fontColor.onkeyup = (e) => {
+  changeBackground(arrayOfCssValues[7], fontColor.value);
+};
+fontSize.onkeyup = (e) => {
+  changeBackground(arrayOfCssValues[8], fontSize.value);
+};
+activeFontSize.onkeyup = (e) => {
+  changeBackground(arrayOfCssValues[9], activeFontSize.value);
+};
+shadowHint.onkeyup = (e) => {
+  changeBackground(arrayOfCssValues[10], shadowHint.value);
+};
+quantityHintsInput.onkeyup = (e) => {
+  valuesToForward.quantityHints = quantityHintsInput.value;
+  localStorage.setItem("quantityHints", quantityHintsInput.value);
+  forwardValues();
+};
+selectionShadowInput.onkeyup = (e) => {
+  changeBackground(arrayOfCssValues[12], selectionShadowInput.value);
+};
+
+function forwardValues() {
+  chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+    chrome.tabs.sendMessage(tabs[0].id, valuesToForward);
+  });
+}
+
+forwardValues();

@@ -1,1 +1,987 @@
-const _0x24b8=['onscroll','abcdefghijklmnopqrstuvwxyzабвгдеёжзийклмнопрстуфхцчшщъыьэюя','push','onresult','document','addNewBase','target','charCodeAt','dictionary','substring','--main-color-1','setEnd','scrollY','font','onclick','getRangeAt','forEach','includes','quantityHints','files','splice','indexOf','div','keyCode','keydown','scrollTop','\x20-\x20','setItem','paddingTop','\x20+\x20','flex','en-En','onbeforeunload','innerHTML','filter','isFinal','onkeydown','stop','--shadow-hint','<br>','scrollLeft','scrollTo','contenteditable','top','sort','none','body','shiftKey','\x20open\x20translator','\x20удалить\x20всё','getElementsByClassName','entry-field_by-Nikola-Ver','overflowX','calc(','getClientRects','stringify','lang','true','left','continuous','slice','insertNode','word','14px','ru-Ru','active-hint','addRange','off-speech-hint_by-Nikola-Ver','value','addEventListener','preventDefault','getSelection','results','addListener','startOffset','borderTopWidth','paddingBottom','letterSpacing','borderRightWidth','contain_by-Nikola-Ver','length','borderLeftWidth','center','span','\x20delete\x20all','width','toLowerCase','normalize','onMessage','overflow','input','null','transcript','letters','getAttribute','text-field_by-Nikola-Ver','createTextNode','color','visible','endContainer','fromCharCode','tagName','whiteSpace','clientHeight','split','onresize','start','baseNode','remove','getElementById','documentElement','result','endOffset','activeElement','\x20stop\x20recognizing','paddingLeft','keypress','height','callQuantity','getItem','setProperty','childNodes','getBoundingClientRect','word-to-hint','--font-size','\x20перестать\x20распознавать','type','ctrlKey','resultIndex','fontSize','removeChild','readAsText','overflowWrap','hidden','nowrap','--selection-font-color','dispatchEvent','webkitTextFillColor','cloneRange','keyup','display','style','transparent','https://translate.google.com/','switch','onload','hint-field_by-Nikola-Ver','object-Nikola-Ver','removeAllRanges','onfocusout','className','focus','--selection-background-color','appendChild','replace','paddingRight','--hint-background-active-color','setStart','setAttribute','collapse','textContent','createElement','--font-size-active','--main-color-2','\x20открыть\x20переводчик','commonAncestorContainer'];(function(_0x35c56b,_0x24b8e3){const _0x3c2070=function(_0x53703a){while(--_0x53703a){_0x35c56b['push'](_0x35c56b['shift']());}};_0x3c2070(++_0x24b8e3);}(_0x24b8,0x16e));const _0x3c20=function(_0x35c56b,_0x24b8e3){_0x35c56b=_0x35c56b-0x0;let _0x3c2070=_0x24b8[_0x35c56b];return _0x3c2070;};const _0x187073=_0x3c20,TEXT_AREA_OBJ=['textarea',_0x187073('0x38')],TEXT_AREA_OBJ_EXCEPT=[],NEED_STYLE_ELEMENTS=[_0x187073('0x91'),_0x187073('0x3f'),_0x187073('0x37'),_0x187073('0x12'),'overflowY','textAlign',_0x187073('0x44'),_0x187073('0x62'),_0x187073('0x2b')],MAX_MEMORY=0xf4240,letters=_0x187073('0x85'),lang=[{'setLang':_0x187073('0xa3'),'letters':'abcdefghijklmnopqrstuvwxyz'},{'setLang':_0x187073('0x1e'),'letters':'абвгдеёжзийклмнопрстуфхцчшщъыьэюя'}];let dictionary=[],breaker=0x0,memory=0x0;const loadBase=document[_0x187073('0x7f')](_0x187073('0x38'));loadBase['id']='base-of-words_by-Nikola-Ver',loadBase[_0x187073('0x5c')]='file',document[_0x187073('0xc')]['appendChild'](loadBase);const speechHint=document['createElement']('div');speechHint['id']=_0x187073('0x21'),document[_0x187073('0xc')][_0x187073('0x77')](speechHint);function currentMemory(_0x53703a){const _0xeca20e=_0x187073;let _0x551d5b=0x0;memory=0x0;while(_0x551d5b<_0x53703a[_0xeca20e('0x2e')]){if(MAX_MEMORY>memory)memory+=_0x53703a[_0x551d5b]['word'][_0xeca20e('0x2e')]*0x4,_0x551d5b++;else return![];}return!![];}loadBase[_0x187073('0x23')]('change',function(){const _0x45a803=_0x187073;let _0x47dab3=new FileReader();_0x47dab3[_0x45a803('0x6f')]=function(){const _0x4a5c83=_0x45a803;let _0x2611cd=this[_0x4a5c83('0x4d')],_0xf2b7f8=_0x2611cd[_0x4a5c83('0x46')](/\n/);_0xf2b7f8[_0x4a5c83('0x94')](_0x5352b9=>{const _0x10b589=_0x4a5c83;if(_0x5352b9[_0x5352b9[_0x10b589('0x2e')]-0x1]==='\x0a')_0x5352b9=_0x5352b9[_0x10b589('0x8d')](0x0,_0x5352b9[_0x10b589('0x2e')]-0x1);dictionary[_0x10b589('0x86')]({'word':_0x5352b9,'callQuantity':0x0});}),dictionary=dictionary['sort']((_0x5dffa7,_0x50e41e)=>{const _0x1c4834=_0x4a5c83;if(_0x5dffa7[_0x1c4834('0x1c')]>_0x50e41e[_0x1c4834('0x1c')])return 0x1;if(_0x5dffa7['word']<_0x50e41e[_0x1c4834('0x1c')])return-0x1;return 0x0;});if(currentMemory(dictionary))localStorage[_0x4a5c83('0x9f')](_0x4a5c83('0x8c'),JSON[_0x4a5c83('0x15')](dictionary));else flagNeedSave=![];},_0x47dab3[_0x45a803('0x61')](this[_0x45a803('0x97')][0x0]);});let prevObj=null,fontSize=_0x187073('0x1d'),quantityWordsToHint=0x5,flagAutoResizeTextArea=!![],flagHint=![],currentWordHint=0x0,currentQuantityOfLetters=0x0,flagContenteditable=![],entryObj=null,flagAutoFontSize=![],flagNeedToSearch=!![],arryaOfWordsToHint=null,startPosHint=0x0,endPosHint=0x0,wordsToHintPos=0x0,addNewWordInHintField=0x0,currentLetter='',recognizerFlag=!![],currentRecognizer=null,countOfMistakes=0x0,flagNeedSave=!![];function controlCommands(_0xea0b9e,_0x48c50e){const _0x45c54a=_0x187073;switch(_0xea0b9e){case _0x45c54a('0xf'):case _0x45c54a('0x32'):_0x48c50e['innerHTML']='';flagContenteditable?entryObj['innerHTML']='':entryObj[_0x45c54a('0x22')]='';return!![];case'\x20переключить\x20на\x20английский':currentLetter=lang[0x0][_0x45c54a('0x3b')][0x0],currentRecognizer[_0x45c54a('0x3')](),currentRecognizer=null,recognizeSpeech(_0x48c50e);return!![];case'\x20switch\x20to\x20russian':currentLetter=lang[0x1][_0x45c54a('0x3b')][0x0],currentRecognizer[_0x45c54a('0x3')](),currentRecognizer=null,recognizeSpeech(_0x48c50e);return!![];case _0x45c54a('0x82'):case _0x45c54a('0xe'):window['open'](_0x45c54a('0x6d'),'','');return!![];default:return![];}}function recognizeSpeech(_0x26cb31){const _0x986eaf=_0x187073;let _0x162bf8=new webkitSpeechRecognition(),_0x202683=lang[_0x986eaf('0x2e')];_0x162bf8[_0x986eaf('0x19')]=!![],_0x162bf8['interimResults']=!![];for(let _0xa70b26=0x0;_0xa70b26<_0x202683;_0xa70b26++){_0x162bf8[_0x986eaf('0x16')]=lang[_0xa70b26]['setLang'];if(lang[_0xa70b26][_0x986eaf('0x3b')][_0x986eaf('0x95')](currentLetter))_0xa70b26=_0x202683;}_0x162bf8[_0x986eaf('0x87')]=function(_0x40c29e){const _0x19ad84=_0x986eaf,_0x4b7149=_0x40c29e[_0x19ad84('0x26')][_0x40c29e[_0x19ad84('0x5e')]];if(_0x4b7149[_0x19ad84('0x1')]){speechHint['textContent']='',speechHint['id']=_0x19ad84('0x21');let _0x2bd020=_0x4b7149[0x0][_0x19ad84('0x3a')][_0x19ad84('0x34')]();if(_0x2bd020[0x0]!=='\x20')_0x2bd020='\x20'+_0x2bd020;if(!controlCommands(_0x2bd020,_0x26cb31)){if(_0x2bd020!=_0x19ad84('0x50')&&_0x2bd020!=_0x19ad84('0x5b')&&!recognizerFlag)try{const _0x2b9661=window[_0x19ad84('0x25')](),_0x4d0f93=_0x2b9661[_0x19ad84('0x93')](0x0);_0x4d0f93[_0x19ad84('0x1b')](document[_0x19ad84('0x3e')](_0x2bd020)),_0x4d0f93['setStart'](_0x26cb31,_0x4d0f93[_0x19ad84('0x4e')]),_0x4d0f93[_0x19ad84('0x7d')](!![]),_0x2b9661[_0x19ad84('0x72')](),_0x2b9661[_0x19ad84('0x20')](_0x4d0f93),flagContenteditable?entryObj['innerHTML']=_0x26cb31[_0x19ad84('0xa5')]:entryObj[_0x19ad84('0x22')]=_0x26cb31[_0x19ad84('0xa5')][_0x19ad84('0x78')](/\<br\>/gi,'\x0a')[_0x19ad84('0x78')](/\&nbsp\;/gi,'\x20');}catch{}else _0x162bf8[_0x19ad84('0x3')](),recognizerFlag=!![];}}else speechHint['id']='on-speech-hint_by-Nikola-Ver',speechHint[_0x19ad84('0x7e')]=_0x4b7149[0x0]['transcript'][_0x19ad84('0x34')]();},currentRecognizer=_0x162bf8,_0x162bf8[_0x986eaf('0x48')]();}function getSelectionCoords(_0x3d310c){const _0x5180f3=_0x187073;let _0x53aa2e=window,_0x54f153=_0x53aa2e[_0x5180f3('0x88')],_0x11f472=0x0,_0x4f739e=0x0,_0x33ffc2,_0x415f66,_0x4dc4a2=_0x53aa2e[_0x5180f3('0x25')]();_0x33ffc2=_0x4dc4a2['getRangeAt'](0x0)[_0x5180f3('0x68')]();let _0x535e3f='';if(_0x3d310c){let _0x23cc21=_0x33ffc2[_0x5180f3('0x28')],_0x2f112d=_0x33ffc2[_0x5180f3('0x83')][_0x5180f3('0x7e')],_0x1a1b80=_0x23cc21-0x1;while(_0x1a1b80>=0x0&&_0x2f112d[_0x1a1b80]!='\x20'&&_0x2f112d[_0x1a1b80]!='&nbsp;'&&_0x2f112d[_0x1a1b80]!=_0x5180f3('0x5')&&_0x2f112d[_0x1a1b80]!='\x0a'&&_0x2f112d[_0x5180f3('0x8b')](_0x1a1b80)!==0xa0){_0x1a1b80--;}if(_0x1a1b80+0x1!==_0x23cc21)_0x535e3f=_0x2f112d[_0x5180f3('0x1a')](_0x1a1b80+0x1,_0x23cc21);}let _0x56bed5=_0x54f153['createElement'](_0x5180f3('0x31'));_0x56bed5[_0x5180f3('0x77')](_0x54f153[_0x5180f3('0x3e')]('​')),_0x33ffc2['insertNode'](_0x56bed5),[_0x415f66]=_0x56bed5[_0x5180f3('0x14')](),_0x11f472=_0x415f66['left'],_0x4f739e=_0x415f66[_0x5180f3('0x9')];let _0x754c52=_0x56bed5['parentNode'];return _0x754c52[_0x5180f3('0x60')](_0x56bed5),_0x754c52[_0x5180f3('0x35')](),[{'x':_0x11f472,'y':_0x4f739e},_0x535e3f];}function searchWords(_0x2fe375){const _0x4152a1=_0x187073;let _0x15d7f3=0x0,_0xc334a8=dictionary['length']-0x1,_0x468470;while(_0x15d7f3<=_0xc334a8){_0x468470=_0x15d7f3+_0xc334a8>>>0x1;if(dictionary[_0x468470][_0x4152a1('0x1c')][_0x4152a1('0x99')](_0x2fe375)===0x0)return _0x468470;else{if(_0x2fe375<dictionary[_0x468470][_0x4152a1('0x1c')])_0xc334a8=_0x468470-0x1;else _0x15d7f3=_0x468470+0x1;}}return null;}function searchWordsToAddOrDel(_0x1dd985){const _0x7ccb4b=_0x187073;let _0x383cc8=0x0,_0x4c096f=dictionary[_0x7ccb4b('0x2e')]-0x1,_0x26110d;while(_0x383cc8<=_0x4c096f){_0x26110d=_0x383cc8+_0x4c096f>>>0x1;if(dictionary[_0x26110d][_0x7ccb4b('0x1c')]===_0x1dd985)return _0x26110d;else{if(_0x1dd985<dictionary[_0x26110d][_0x7ccb4b('0x1c')])_0x4c096f=_0x26110d-0x1;else _0x383cc8=_0x26110d+0x1;}}return null;}function insertWord(_0x519fb8){const _0x1bc32b=_0x187073;function _0x1a3499(_0x35ca19,_0x43f030){const _0x2614c9=_0x3c20;let _0x5dcae3=0x0,_0x36aceb=_0x35ca19[_0x2614c9('0x2e')];while(_0x5dcae3<_0x36aceb){let _0x53802a=_0x5dcae3+_0x36aceb>>>0x1;if(_0x35ca19[_0x53802a][_0x2614c9('0x1c')]<_0x43f030)_0x5dcae3=_0x53802a+0x1;else _0x36aceb=_0x53802a;}return _0x5dcae3;}if(searchWordsToAddOrDel(_0x519fb8)===null){memory+=_0x519fb8[_0x1bc32b('0x2e')]*0x4,dictionary['splice'](_0x1a3499(dictionary,_0x519fb8),0x0,{'word':_0x519fb8,'callQuantity':0x1});if(MAX_MEMORY<memory)flagNeedSave=![];}}function hintFieldFunc(_0x5c9d3b,_0x498241,_0x444c16,_0x3dea1f){const _0x11c70b=_0x187073;let [_0x936c05,_0xf4643c]=getSelectionCoords(_0x444c16);if(_0x444c16){currentQuantityOfLetters=_0xf4643c[_0x11c70b('0x2e')];if(currentQuantityOfLetters){if(flagNeedToSearch){foundWordPos=searchWords(_0xf4643c);if(foundWordPos!==null){let _0x3b570b=document[_0x11c70b('0x10')](_0x11c70b('0x59'));startPosHint=foundWordPos,endPosHint=foundWordPos+0x1;while(startPosHint>=0x0&&dictionary[startPosHint][_0x11c70b('0x1c')][_0x11c70b('0x99')](_0xf4643c)===0x0)startPosHint--;startPosHint++;while(endPosHint<dictionary['length']&&dictionary[endPosHint][_0x11c70b('0x1c')][_0x11c70b('0x99')](_0xf4643c)===0x0)endPosHint++;arryaOfWordsToHint=dictionary['slice'](startPosHint,endPosHint)[_0x11c70b('0xa')](({callQuantity:_0x1a1e5c},{callQuantity:_0x5c923b})=>_0x5c923b-_0x1a1e5c);for(let _0x572891=0x0;_0x572891<quantityWordsToHint;_0x572891++){if(_0x572891+currentWordHint<endPosHint-startPosHint)_0x3b570b[_0x572891][_0x11c70b('0x7e')]=arryaOfWordsToHint[_0x572891+currentWordHint][_0x11c70b('0x1c')];else _0x3b570b[_0x572891]['textContent']='';if(_0x572891===wordsToHintPos)_0x3b570b[_0x572891]['id']=_0x11c70b('0x1f');else _0x3b570b[_0x572891]['id']='';}_0x5c9d3b[_0x11c70b('0x6b')][_0x11c70b('0x6a')]='',flagHint=!![];}else _0x5c9d3b[_0x11c70b('0x6b')][_0x11c70b('0x6a')]='none',flagHint=![];}else{let _0x2d09a6=document[_0x11c70b('0x10')](_0x11c70b('0x59'));if(addNewWordInHintField>0x0){for(let _0x26093c=0x0;_0x26093c<quantityWordsToHint-0x1;_0x26093c++)_0x2d09a6[_0x26093c][_0x11c70b('0x7e')]=_0x2d09a6[_0x26093c+0x1][_0x11c70b('0x7e')];_0x2d09a6[quantityWordsToHint-0x1][_0x11c70b('0x7e')]=arryaOfWordsToHint[currentWordHint][_0x11c70b('0x1c')];}if(addNewWordInHintField<0x0){for(let _0x4bbf44=quantityWordsToHint-0x1;_0x4bbf44>0x0;_0x4bbf44--)_0x2d09a6[_0x4bbf44][_0x11c70b('0x7e')]=_0x2d09a6[_0x4bbf44-0x1]['textContent'];_0x2d09a6[0x0]['textContent']=arryaOfWordsToHint[currentWordHint][_0x11c70b('0x1c')];}for(let _0x135366=0x0;_0x135366<quantityWordsToHint;_0x135366++){if(_0x135366===wordsToHintPos)_0x2d09a6[_0x135366]['id']=_0x11c70b('0x1f');else _0x2d09a6[_0x135366]['id']='';}}}else _0x5c9d3b[_0x11c70b('0x6b')][_0x11c70b('0x6a')]=_0x11c70b('0xb'),flagHint=![];}let _0x3d826a=getComputedStyle(_0x3dea1f),_0x34f8e7=getComputedStyle(_0x5c9d3b)['height'];_0x5c9d3b[_0x11c70b('0x6b')][_0x11c70b('0x18')]=_0x11c70b('0x13')+String(_0x936c05['x']-_0x498241[_0x11c70b('0x18')])+'px'+_0x11c70b('0x9e')+_0x3d826a[_0x11c70b('0x51')]+_0x11c70b('0x9e')+_0x3d826a['borderLeftWidth']+')';if(_0x936c05['y']+parseFloat(fontSize)-parseFloat(_0x3d826a[_0x11c70b('0xa0')])-parseFloat(_0x3d826a[_0x11c70b('0x29')])+parseFloat(_0x34f8e7)<parseFloat(document[_0x11c70b('0x4c')][_0x11c70b('0x45')])+parseFloat(window[_0x11c70b('0x90')]))_0x5c9d3b['style'][_0x11c70b('0x9')]=_0x11c70b('0x13')+String(_0x936c05['y']-_0x498241[_0x11c70b('0x9')])+'px'+_0x11c70b('0xa1')+fontSize+_0x11c70b('0x9e')+_0x3d826a[_0x11c70b('0xa0')]+'\x20-\x20'+_0x3d826a[_0x11c70b('0x29')]+')';else _0x5c9d3b[_0x11c70b('0x6b')][_0x11c70b('0x9')]=_0x11c70b('0x13')+String(_0x936c05['y']-_0x498241['top']-parseFloat(_0x34f8e7))+'px'+'\x20-\x20'+_0x3d826a[_0x11c70b('0xa0')]+_0x11c70b('0x9e')+_0x3d826a[_0x11c70b('0x29')]+')';}function changeFocucPos(_0x2c087c,_0x13381f,_0x29f157,_0x430844,_0x326986,_0x279584=0x0,_0x46de51=0x0){const _0x24c6d7=_0x187073;try{while(_0x2c087c[_0x24c6d7('0x57')][_0x279584]!==undefined&&_0x13381f>(_0x2c087c['childNodes'][_0x279584][_0x24c6d7('0x2e')]||0x1)){_0x13381f-=_0x2c087c[_0x24c6d7('0x57')][_0x279584]['length']?_0x2c087c[_0x24c6d7('0x57')][_0x279584][_0x24c6d7('0x2e')]:0x1,_0x279584++;}while(_0x2c087c[_0x24c6d7('0x57')][_0x46de51]!==undefined&&_0x29f157>(_0x2c087c[_0x24c6d7('0x57')][_0x46de51][_0x24c6d7('0x2e')]||0x1)){_0x29f157-=_0x2c087c[_0x24c6d7('0x57')][_0x46de51][_0x24c6d7('0x2e')]?_0x2c087c['childNodes'][_0x46de51][_0x24c6d7('0x2e')]:0x1,_0x46de51++;}_0x430844[_0x24c6d7('0x7b')](_0x2c087c[_0x24c6d7('0x57')][_0x279584],_0x13381f),_0x430844[_0x24c6d7('0x8f')](_0x2c087c['childNodes'][_0x46de51],_0x29f157),_0x430844[_0x24c6d7('0x7d')](!![]),_0x326986[_0x24c6d7('0x72')](),_0x326986[_0x24c6d7('0x20')](_0x430844);}catch{}}function focusOff(_0x49002d,_0x25d3ec){const _0x3ee88e=_0x187073;entryObj&&(entryObj['style']['webkitTextFillColor']='');if(_0x49002d){let _0x14a8c0=document[_0x3ee88e('0x4b')](_0x3ee88e('0x3d'));if(_0x14a8c0&&_0x25d3ec){if(flagContenteditable){let _0x2c80d2=window[_0x3ee88e('0x25')](),_0x54680c=_0x2c80d2[_0x3ee88e('0x93')](0x0);entryObj[_0x3ee88e('0x75')]();let _0x57ac48=_0x54680c[_0x3ee88e('0x28')],_0x475e4f=_0x54680c[_0x3ee88e('0x4e')],_0x5fedae=0x0,_0x2b4fc1=0x0;_0x14a8c0['childNodes'][_0x3ee88e('0x94')]((_0x18aa74,_0x24aacb)=>{if(_0x18aa74===_0x54680c['startContainer'])_0x5fedae=_0x24aacb;if(_0x18aa74===_0x54680c['endContainer'])_0x2b4fc1=_0x24aacb;}),_0x2c80d2=window[_0x3ee88e('0x25')](),_0x54680c=_0x2c80d2['getRangeAt'](0x0),changeFocucPos(entryObj,_0x57ac48,_0x475e4f,_0x54680c,_0x2c80d2,_0x5fedae,_0x2b4fc1);}else{let _0x28cf65=window[_0x3ee88e('0x25')](),_0x3b1d83=_0x28cf65['getRangeAt'](0x0);entryObj[_0x3ee88e('0x75')]();let _0x52386c=_0x3b1d83['startOffset'],_0x2bc06a=_0x3b1d83[_0x3ee88e('0x4e')],_0x440d36=![],_0x1be78e=![];_0x14a8c0[_0x3ee88e('0x57')][_0x3ee88e('0x94')](_0x1245a8=>{const _0x48f6c5=_0x3ee88e;if(_0x1245a8===_0x3b1d83['startContainer'])_0x440d36=!![];if(!_0x440d36)_0x52386c+=_0x1245a8[_0x48f6c5('0x2e')]?_0x1245a8[_0x48f6c5('0x2e')]:0x1;if(_0x1245a8===_0x3b1d83[_0x48f6c5('0x41')])_0x1be78e=!![];if(!_0x1be78e)_0x2bc06a+=_0x1245a8[_0x48f6c5('0x2e')]?_0x1245a8[_0x48f6c5('0x2e')]:0x1;}),entryObj['selectionStart']=_0x52386c,entryObj['selectionEnd']=_0x2bc06a;}}recognizerFlag=!![],currentRecognizer&&(currentRecognizer[_0x3ee88e('0x3')](),currentRecognizer=null),_0x49002d[_0x3ee88e('0x4a')]();}}function resizeTextArea(_0x119aa7,_0x1cc48e,_0x2758ce){const _0x4425bb=_0x187073;let _0x26efdb=_0x2758ce[_0x4425bb('0x58')](),_0x39d0bd=getComputedStyle(_0x2758ce);NEED_STYLE_ELEMENTS['forEach'](_0x4220c1=>{const _0x1b2c48=_0x4425bb;_0x1cc48e[_0x1b2c48('0x6b')][_0x4220c1]=_0x39d0bd[_0x4220c1];});if(_0x2758ce['tagName'][_0x4425bb('0x34')]()===_0x4425bb('0x38')){if(_0x39d0bd[_0x4425bb('0x37')]===_0x4425bb('0x40'))_0x1cc48e['style'][_0x4425bb('0x37')]=_0x4425bb('0x63');if(_0x39d0bd['whiteSpace']==='normal')_0x1cc48e[_0x4425bb('0x6b')][_0x4425bb('0x44')]=_0x4425bb('0x64');_0x1cc48e[_0x4425bb('0x6b')]['alignItems']=_0x4425bb('0x30'),_0x1cc48e[_0x4425bb('0x6b')][_0x4425bb('0x6a')]=_0x4425bb('0xa2');}_0x2758ce[_0x4425bb('0x7')](_0x1cc48e[_0x4425bb('0x6')],_0x1cc48e[_0x4425bb('0x9d')]),_0x119aa7[_0x4425bb('0x6b')][_0x4425bb('0x33')]='calc('+_0x26efdb[_0x4425bb('0x33')]+'px'+_0x4425bb('0x9e')+_0x39d0bd[_0x4425bb('0x51')]+_0x4425bb('0x9e')+_0x39d0bd[_0x4425bb('0x79')]+'\x20-\x20'+_0x39d0bd[_0x4425bb('0x2f')]+_0x4425bb('0x9e')+_0x39d0bd[_0x4425bb('0x2c')]+')',_0x119aa7[_0x4425bb('0x6b')][_0x4425bb('0x53')]=_0x4425bb('0x13')+_0x26efdb[_0x4425bb('0x53')]+'px'+_0x4425bb('0x9e')+_0x39d0bd[_0x4425bb('0xa0')]+'\x20-\x20'+_0x39d0bd[_0x4425bb('0x2a')]+_0x4425bb('0x9e')+_0x39d0bd[_0x4425bb('0x29')]+'\x20-\x20'+_0x39d0bd['borderBottomWidth']+')',_0x119aa7['style'][_0x4425bb('0x9')]=_0x4425bb('0x13')+_0x26efdb[_0x4425bb('0x9')]+'px'+'\x20+\x20'+_0x39d0bd[_0x4425bb('0xa0')]+'\x20+\x20'+_0x39d0bd['borderTopWidth']+')',_0x119aa7[_0x4425bb('0x6b')][_0x4425bb('0x18')]='calc('+_0x26efdb[_0x4425bb('0x18')]+'px'+_0x4425bb('0xa1')+_0x39d0bd[_0x4425bb('0x51')]+_0x4425bb('0xa1')+_0x39d0bd[_0x4425bb('0x2f')]+')',fontSize=_0x39d0bd[_0x4425bb('0x5f')],flagAutoFontSize&&(document['documentElement'][_0x4425bb('0x6b')][_0x4425bb('0x56')]('--font-size',fontSize),document[_0x4425bb('0x4c')][_0x4425bb('0x6b')]['setProperty']('--font-size-active',fontSize));}function focusOn(_0x2cc58c){const _0x5a4331=_0x187073;let _0x1e20e5=null,_0x50ca42=![];flagContenteditable=_0x2cc58c[_0x5a4331('0x3c')](_0x5a4331('0x8'));if((flagContenteditable||TEXT_AREA_OBJ[_0x5a4331('0x95')](_0x2cc58c[_0x5a4331('0x43')][_0x5a4331('0x34')]()))&&(!TEXT_AREA_OBJ_EXCEPT[_0x5a4331('0x95')](_0x2cc58c[_0x5a4331('0x74')][_0x5a4331('0x34')]())||!TEXT_AREA_OBJ_EXCEPT['includes'](_0x2cc58c['id'][_0x5a4331('0x34')]()))){entryObj=_0x2cc58c,_0x1e20e5=document[_0x5a4331('0x7f')](_0x5a4331('0x9a')),_0x1e20e5['id']=_0x5a4331('0x11');let _0x43c426=document[_0x5a4331('0x7f')](_0x5a4331('0x9a'));_0x43c426[_0x5a4331('0x7c')](_0x5a4331('0x8'),_0x5a4331('0x17')),_0x43c426['id']=_0x5a4331('0x3d');if(flagContenteditable)_0x43c426[_0x5a4331('0xa5')]=_0x2cc58c[_0x5a4331('0xa5')];else _0x43c426[_0x5a4331('0xa5')]=_0x2cc58c['value'][_0x5a4331('0x78')](/\n/gi,_0x5a4331('0x5'));let _0x5ec48a=document[_0x5a4331('0x7f')]('div');_0x5ec48a['id']=_0x5a4331('0x2d');let _0x2753d5=_0x2cc58c[_0x5a4331('0x58')]();_0x43c426[_0x5a4331('0x84')]=_0x62b3fe=>{const _0x4fea50=_0x5a4331;_0x2cc58c[_0x4fea50('0x7')](_0x43c426[_0x4fea50('0x6')],_0x43c426[_0x4fea50('0x9d')]);},resizeTextArea(_0x1e20e5,_0x43c426,_0x2cc58c);let _0x5764b6=document['createElement']('div');_0x5764b6['id']=_0x5a4331('0x70'),_0x5764b6[_0x5a4331('0x6b')]['display']=_0x5a4331('0xb');for(let _0x3f01c5=0x0;_0x3f01c5<quantityWordsToHint;_0x3f01c5++){let _0x5171d1=document[_0x5a4331('0x7f')](_0x5a4331('0x9a'));_0x5171d1[_0x5a4331('0x74')]=_0x5a4331('0x59'),_0x5764b6[_0x5a4331('0x77')](_0x5171d1);}_0x43c426[_0x5a4331('0x23')](_0x5a4331('0x52'),_0x361b91=>{const _0x5af5f8=_0x5a4331,_0x1512d4=String[_0x5af5f8('0x42')](_0x361b91[_0x5af5f8('0x9b')]||_0x361b91['charCode'])[_0x5af5f8('0x34')]();if(letters[_0x5af5f8('0x95')](_0x1512d4))currentLetter=_0x1512d4;currentRecognizer&&!recognizerFlag&&(speechHint['id']='off-speech-hint_by-Nikola-Ver',speechHint[_0x5af5f8('0x7e')]='',currentRecognizer[_0x5af5f8('0x3')](),currentRecognizer=null,recognizeSpeech(_0x43c426)),_0x2cc58c[_0x5af5f8('0x66')](new KeyboardEvent(_0x5af5f8('0x52'),_0x361b91));}),_0x43c426['addEventListener']('keydown',_0x5e457b=>{const _0x49d0d6=_0x5a4331;if(_0x5e457b['shiftKey']&&_0x5e457b[_0x49d0d6('0x5d')]&&_0x5e457b['altKey']){let _0x532b96=document[_0x49d0d6('0x25')]()['toString']();if(_0x532b96[_0x49d0d6('0x2e')]>0x0)insertWord(_0x532b96);}if(_0x5e457b[_0x49d0d6('0x9b')]===0x76)recognizerFlag?(recognizerFlag=![],recognizeSpeech(_0x43c426)):(recognizerFlag=!![],currentRecognizer&&(currentRecognizer[_0x49d0d6('0x3')](),currentRecognizer=null));if(!_0x5e457b[_0x49d0d6('0xd')]&&_0x5e457b[_0x49d0d6('0x9b')]===0xd||_0x5e457b[_0x49d0d6('0x9b')]===0x1b||_0x5e457b[_0x49d0d6('0x9b')]===0x9){if(flagHint){_0x5764b6[_0x49d0d6('0x6b')][_0x49d0d6('0x6a')]=_0x49d0d6('0xb');if(_0x5e457b[_0x49d0d6('0x9b')]===0xd||_0x5e457b[_0x49d0d6('0x9b')]===0x9){let _0xb0696f=arryaOfWordsToHint[currentWordHint][_0x49d0d6('0x1c')];arryaOfWordsToHint[currentWordHint][_0x49d0d6('0x54')]++;let _0x5a9799=window[_0x49d0d6('0x25')](),_0x39ff2f=_0x5a9799[_0x49d0d6('0x93')](0x0);_0x39ff2f[_0x49d0d6('0x1b')](document[_0x49d0d6('0x3e')](_0xb0696f[_0x49d0d6('0x1a')](currentQuantityOfLetters,_0xb0696f[_0x49d0d6('0x2e')]))),_0x39ff2f['setStart'](_0x43c426,_0x39ff2f['endOffset']),_0x39ff2f['collapse'](!![]),_0x5a9799['removeAllRanges'](),_0x5a9799['addRange'](_0x39ff2f);}flagHint=![],_0x50ca42=!![],_0x5e457b[_0x49d0d6('0x24')]();return;}else focusOff(_0x1e20e5,![]);}if(_0x5e457b[_0x49d0d6('0x9b')]===0x2e){if(flagHint&&currentWordHint<arryaOfWordsToHint[_0x49d0d6('0x2e')]){let _0x284f92=arryaOfWordsToHint[currentWordHint][_0x49d0d6('0x1c')];dictionary['splice'](searchWordsToAddOrDel(_0x284f92),0x1),arryaOfWordsToHint[_0x49d0d6('0x98')](currentWordHint,0x1);let _0x4a8715=document[_0x49d0d6('0x10')](_0x49d0d6('0x59')),_0x4eef27=arryaOfWordsToHint[_0x49d0d6('0x2e')],_0x2e7d23=_0x4a8715[_0x49d0d6('0x2e')];for(let _0x4acb44=wordsToHintPos;_0x4acb44<_0x2e7d23;_0x4acb44++){if(_0x4acb44+currentWordHint-wordsToHintPos<_0x4eef27)_0x4a8715[_0x4acb44][_0x49d0d6('0x7e')]=arryaOfWordsToHint[_0x4acb44+currentWordHint-wordsToHintPos][_0x49d0d6('0x1c')];else _0x4a8715[_0x4acb44][_0x49d0d6('0x7e')]='';}_0x5e457b[_0x49d0d6('0x24')]();return;}else{if(arryaOfWordsToHint[_0x49d0d6('0x2e')]===0x0){_0x50ca42=!![],flagHint=![];let _0x242156=document['getElementById'](_0x49d0d6('0x70'));_0x242156[_0x49d0d6('0x6b')][_0x49d0d6('0x6a')]=_0x49d0d6('0xb');}}}flagNeedToSearch=!![];if(flagHint&&(_0x5e457b[_0x49d0d6('0x9b')]===0x26||_0x5e457b[_0x49d0d6('0x9b')]===0x28)){addNewWordInHintField=0x0;if(_0x5e457b[_0x49d0d6('0x9b')]===0x26){if(currentWordHint>0x0){currentWordHint--;if(wordsToHintPos>0x0)wordsToHintPos--;else addNewWordInHintField=-0x1;}}else{if(arryaOfWordsToHint&&currentWordHint<arryaOfWordsToHint[_0x49d0d6('0x2e')]-0x1){currentWordHint++;if(wordsToHintPos+0x1<quantityWordsToHint)wordsToHintPos++;else addNewWordInHintField=0x1;}}flagNeedToSearch=![],_0x5e457b[_0x49d0d6('0x24')]();return;}else wordsToHintPos=0x0,currentWordHint=0x0;_0x2cc58c[_0x49d0d6('0x66')](new KeyboardEvent(_0x49d0d6('0x9c'),_0x5e457b)),hintFieldFunc(_0x5764b6,_0x2753d5,![],_0x2cc58c);}),_0x43c426[_0x5a4331('0x23')](_0x5a4331('0x69'),_0x5809f4=>{const _0x54a1da=_0x5a4331;flagContenteditable?_0x2cc58c[_0x54a1da('0xa5')]=_0x43c426[_0x54a1da('0xa5')]:_0x2cc58c['value']=_0x43c426[_0x54a1da('0xa5')][_0x54a1da('0x78')](/\<br\>/gi,'\x0a')[_0x54a1da('0x78')](/\&nbsp\;/gi,'\x20'),_0x2753d5=_0x2cc58c[_0x54a1da('0x58')](),!flagHint&&[0x9,0x10,0x11,0x12,0x14,0x20,0x21,0x22,0x23,0x24,0x25,0x26,0x27,0x28,0x2d,0x5b,0x5d,0x70,0x71,0x72,0x73,0x74,0x75,0x76,0x77,0x78,0x79,0x7a,0x7b][_0x54a1da('0x95')](_0x5809f4['keyCode'])&&(_0x50ca42=!![],_0x5809f4[_0x54a1da('0x5d')]&&_0x5809f4[_0x54a1da('0x9b')]===0x20&&(_0x50ca42=![])),hintFieldFunc(_0x5764b6,_0x2753d5,!_0x50ca42,_0x2cc58c),_0x50ca42=![],_0x2cc58c['dispatchEvent'](new KeyboardEvent(_0x54a1da('0x69'),_0x5809f4)),resizeTextArea(_0x1e20e5,_0x43c426,_0x2cc58c);}),_0x5764b6[_0x5a4331('0x74')]=_0x5a4331('0x71'),_0x43c426[_0x5a4331('0x74')]=_0x5a4331('0x71'),_0x1e20e5[_0x5a4331('0x74')]=_0x5a4331('0x71'),_0x5ec48a[_0x5a4331('0x77')](_0x43c426),_0x5ec48a[_0x5a4331('0x77')](_0x5764b6),_0x1e20e5[_0x5a4331('0x77')](_0x5ec48a),document[_0x5a4331('0xc')]['appendChild'](_0x1e20e5);let _0x21a4e3=window['getSelection'](),_0x114c43=_0x21a4e3['getRangeAt'](0x0);_0x43c426[_0x5a4331('0x75')](),_0x43c426[_0x5a4331('0x73')]=_0xa0e7b8=>{if(!flagHint)focusOff(prevObj);};if(flagContenteditable){let _0x5d5aa3=_0x114c43['startOffset'],_0x3bdc1a=_0x114c43['endOffset'],_0x21d633=0x0,_0x440984=0x0;_0x2cc58c[_0x5a4331('0x57')][_0x5a4331('0x94')]((_0x4851f0,_0x351a2d)=>{const _0x2f414a=_0x5a4331;if(_0x4851f0===_0x114c43['startContainer'])_0x21d633=_0x351a2d;if(_0x4851f0===_0x114c43[_0x2f414a('0x41')])_0x440984=_0x351a2d;}),_0x21a4e3=window['getSelection'](),_0x114c43=_0x21a4e3[_0x5a4331('0x93')](0x0),changeFocucPos(_0x43c426,_0x5d5aa3,_0x3bdc1a,_0x114c43,_0x21a4e3,_0x21d633,_0x440984);}else _0x21a4e3=window['getSelection'](),_0x21a4e3[_0x5a4331('0x49')]&&(_0x114c43=_0x21a4e3[_0x5a4331('0x93')](0x0),changeFocucPos(_0x43c426,_0x2cc58c['selectionStart'],_0x2cc58c['selectionEnd'],_0x114c43,_0x21a4e3));_0x2cc58c[_0x5a4331('0x6b')][_0x5a4331('0x67')]=_0x5a4331('0x6c'),window[_0x5a4331('0x47')]=()=>{resizeTextArea(_0x1e20e5,_0x43c426,_0x2cc58c);},window['onscroll']=()=>{resizeTextArea(_0x1e20e5,_0x43c426,_0x2cc58c);};}return _0x1e20e5;}document[_0x187073('0x92')]=_0x1016f5=>{const _0x361058=_0x187073;breaker===0x1&&changeFocus(_0x1016f5[_0x361058('0x8a')]);},document[_0x187073('0x2')]=_0x4cccd4=>{const _0x294393=_0x187073;_0x4cccd4[_0x294393('0x9b')]===0x71&&(breaker++,breaker===0x3&&(prevObj&&focusOff(prevObj,!![]),breaker=0x0));if(breaker===0x1){if(!document[_0x294393('0x4b')](_0x294393('0x11'))||countOfMistakes>0x1)countOfMistakes=0x0,changeFocus(document[_0x294393('0x4f')]);else'text-field_by-Nikola-Ver'===_0x4cccd4['target']['id']?countOfMistakes=0x0:countOfMistakes++;}};function changeFocus(_0x25f8c5){const _0x3119be=_0x187073;if(_0x25f8c5[_0x3119be('0x74')]!==_0x3119be('0x71')){if(_0x25f8c5['className']===_0x3119be('0x59')){let _0x45b7d4=_0x25f8c5[_0x3119be('0x7e')],_0xc5fbcb=window[_0x3119be('0x25')](),_0x311e06=_0xc5fbcb[_0x3119be('0x93')](0x0);arryaOfWordsToHint[_0x3119be('0x94')](_0x3f1403=>{const _0x373aca=_0x3119be;if(_0x45b7d4===_0x3f1403['word'])_0x3f1403[_0x373aca('0x54')]++;}),_0x311e06['insertNode'](document[_0x3119be('0x3e')](_0x45b7d4[_0x3119be('0x1a')](currentQuantityOfLetters,_0x45b7d4[_0x3119be('0x2e')])));let _0x3164ae=document[_0x3119be('0x4b')]('text-field_by-Nikola-Ver');_0x311e06[_0x3119be('0x7b')](_0x3164ae,_0x311e06[_0x3119be('0x4e')]),_0x311e06[_0x3119be('0x7d')](!![]),_0xc5fbcb[_0x3119be('0x72')](),_0xc5fbcb['addRange'](_0x311e06);flagContenteditable?entryObj[_0x3119be('0xa5')]=_0x3164ae[_0x3119be('0xa5')]:entryObj[_0x3119be('0x22')]=_0x3164ae[_0x3119be('0xa5')][_0x3119be('0x78')](/\<br\>/gi,'\x0a')[_0x3119be('0x78')](/\&nbsp\;/gi,'\x20');flagHint=![];let _0x547330=document[_0x3119be('0x4b')](_0x3119be('0x70'));_0x547330[_0x3119be('0x6b')][_0x3119be('0x6a')]=_0x3119be('0xb');}else focusOff(prevObj,![]),prevObj=focusOn(_0x25f8c5);}else{flagHint=![];let _0x446d91=document[_0x3119be('0x4b')]('hint-field_by-Nikola-Ver');_0x446d91[_0x3119be('0x6b')]['display']=_0x3119be('0xb');}}function changeHintFieldOrAddNewWords(_0x140c3c,_0x59f259){const _0x50e9ff=_0x187073;if(_0x59f259&&_0x59f259!==_0x50e9ff('0x39')){if(_0x140c3c===_0x50e9ff('0x96')){localStorage[_0x50e9ff('0x9f')](_0x140c3c,_0x59f259),quantityWordsToHint=_0x59f259;let _0x122085=document[_0x50e9ff('0x4b')](_0x50e9ff('0x70'));if(_0x122085){let _0x3581c3=document[_0x50e9ff('0x10')](_0x50e9ff('0x59')),_0x3f1d9c=_0x3581c3['length'];for(let _0xada38f=0x0;_0xada38f<_0x3f1d9c;_0xada38f++)_0x3581c3[0x0][_0x50e9ff('0x4a')]();if(wordsToHintPos>quantityWordsToHint)wordsToHintPos=quantityWordsToHint-0x1;for(let _0x5307cd=0x0;_0x5307cd<quantityWordsToHint;_0x5307cd++){let _0x35d810=document[_0x50e9ff('0x7f')](_0x50e9ff('0x9a'));_0x35d810[_0x50e9ff('0x74')]=_0x50e9ff('0x59');if(_0x5307cd===wordsToHintPos)_0x35d810['id']='active-hint';_0x122085[_0x50e9ff('0x77')](_0x35d810);}}}else{if(_0x140c3c===_0x50e9ff('0x89'))loadBase['click']();else{if(_0x140c3c===_0x50e9ff('0x6e')){if(breaker===0x0)breaker=0x1;else prevObj&&focusOff(prevObj,!![]),breaker=0x0;}else _0x140c3c[_0x50e9ff('0x99')](_0x50e9ff('0x8c'))===0x0?(dictionary=JSON['parse'](_0x59f259),dictionary=dictionary[_0x50e9ff('0xa')]((_0x4db614,_0x491c9d)=>{const _0x48c243=_0x50e9ff;if(_0x4db614[_0x48c243('0x1c')]>_0x491c9d['word'])return 0x1;if(_0x4db614[_0x48c243('0x1c')]<_0x491c9d[_0x48c243('0x1c')])return-0x1;return 0x0;})):(document[_0x50e9ff('0x4c')][_0x50e9ff('0x6b')][_0x50e9ff('0x56')](_0x140c3c,_0x59f259),localStorage[_0x50e9ff('0x9f')](_0x140c3c,_0x59f259));}}}}chrome['extension'][_0x187073('0x36')][_0x187073('0x27')](_0x43c371=>{for(let _0xad149c in _0x43c371)changeHintFieldOrAddNewWords(_0xad149c,_0x43c371[_0xad149c]);}),function(){const _0x4645b2=_0x187073,_0xadacfc=[_0x4645b2('0x8e'),_0x4645b2('0x81'),_0x4645b2('0x76'),_0x4645b2('0x65'),_0x4645b2('0x7a'),'--hint-background-color','--hint-font-active-color','--hint-font-color',_0x4645b2('0x5a'),_0x4645b2('0x80'),_0x4645b2('0x4'),_0x4645b2('0x96'),'--selection-shadow'];_0xadacfc['forEach'](_0x1d0f0a=>{const _0x4756b6=_0x4645b2;changeHintFieldOrAddNewWords(_0x1d0f0a,localStorage[_0x4756b6('0x55')](_0x1d0f0a));});let _0x51d576=_0x4645b2('0x8c');changeHintFieldOrAddNewWords(_0x51d576,localStorage[_0x4645b2('0x55')](_0x51d576));}(),window[_0x187073('0xa4')]=_0x515390=>{const _0xcaff9f=_0x187073;if(flagNeedSave)localStorage[_0xcaff9f('0x9f')](_0xcaff9f('0x8c'),JSON['stringify'](dictionary));else{let _0x24e5bf=dictionary[_0xcaff9f('0x0')](_0x47198b=>_0x47198b[_0xcaff9f('0x54')]>0x0);if(currentMemory(_0x24e5bf))localStorage[_0xcaff9f('0x9f')](_0xcaff9f('0x8c'),JSON[_0xcaff9f('0x15')](_0x24e5bf));}};
+const TEXT_AREA_OBJ = ["textarea", "input"];
+const TEXT_AREA_OBJ_EXCEPT = [];
+const NEED_STYLE_ELEMENTS = [
+  "font",
+  "color",
+  "overflow",
+  "overflowX",
+  "overflowY",
+  "textAlign",
+  "whiteSpace",
+  "overflowWrap",
+  "letterSpacing",
+];
+const MAX_MEMORY = 1000000;
+const letters = "abcdefghijklmnopqrstuvwxyzабвгдеёжзийклмнопрстуфхцчшщъыьэюя";
+const lang = [
+  { setLang: "en-En", letters: "abcdefghijklmnopqrstuvwxyz" },
+  { setLang: "ru-Ru", letters: "абвгдеёжзийклмнопрстуфхцчшщъыьэюя" },
+];
+
+let dictionary = [];
+let breaker = 0;
+let memory = 0;
+
+const loadBase = document.createElement("input");
+loadBase.id = "base-of-words_by-Nikola-Ver";
+loadBase.type = "file";
+document.body.appendChild(loadBase);
+
+const speechHint = document.createElement("div");
+speechHint.id = "off-speech-hint_by-Nikola-Ver";
+document.body.appendChild(speechHint);
+
+function currentMemory(words) {
+  let start = 0;
+  memory = 0;
+  while (start < words.length) {
+    if (MAX_MEMORY > memory) {
+      memory += words[start].word.length * 4;
+      start++;
+    } else {
+      return false;
+    }
+  }
+  return true;
+}
+
+loadBase.addEventListener("change", function () {
+  let fr = new FileReader();
+  fr.onload = function () {
+    let fileContent = this.result;
+    let temp = fileContent.split(/\n/);
+    temp.forEach((e) => {
+      if (e[e.length - 1] === "\n") e = e.substring(0, e.length - 1);
+      dictionary.push({ word: e, callQuantity: 0 });
+    });
+
+    dictionary = dictionary.sort((current, next) => {
+      if (current.word > next.word) return 1;
+      if (current.word < next.word) return -1;
+      return 0;
+    });
+
+    if (currentMemory(dictionary))
+      localStorage.setItem("dictionary", JSON.stringify(dictionary));
+    else flagNeedSave = false;
+  };
+  fr.readAsText(this.files[0]);
+});
+
+let prevObj = null;
+let fontSize = "14px";
+let quantityWordsToHint = 5;
+let flagAutoResizeTextArea = true;
+let flagHint = false;
+let currentWordHint = 0;
+let currentQuantityOfLetters = 0;
+let flagContenteditable = false;
+let entryObj = null;
+let flagAutoFontSize = false;
+let flagNeedToSearch = true;
+let arryaOfWordsToHint = null;
+let startPosHint = 0;
+let endPosHint = 0;
+let wordsToHintPos = 0;
+let addNewWordInHintField = 0;
+let currentLetter = "";
+let recognizerFlag = true;
+let currentRecognizer = null;
+let countOfMistakes = 0;
+let flagNeedSave = true;
+
+function controlCommands(text, entryFieldText) {
+  switch (text) {
+    case " удалить всё":
+    case " delete all":
+      entryFieldText.innerHTML = "";
+      if (flagContenteditable) {
+        entryObj.innerHTML = "";
+      } else {
+        entryObj.value = "";
+      }
+      return true;
+
+    case " переключить на английский":
+      currentLetter = lang[0].letters[0];
+      currentRecognizer.stop();
+      currentRecognizer = null;
+      recognizeSpeech(entryFieldText);
+      return true;
+    case " switch to russian":
+      currentLetter = lang[1].letters[0];
+      currentRecognizer.stop();
+      currentRecognizer = null;
+      recognizeSpeech(entryFieldText);
+      return true;
+
+    case " открыть переводчик":
+    case " open translator":
+      window.open("https://translate.google.com/", "", "");
+      return true;
+
+    default:
+      return false;
+  }
+}
+
+function recognizeSpeech(entryFieldText) {
+  let recognizer = new webkitSpeechRecognition();
+  let len = lang.length;
+  recognizer.continuous = true;
+  recognizer.interimResults = true;
+
+  for (let i = 0; i < len; i++) {
+    recognizer.lang = lang[i].setLang;
+    if (lang[i].letters.includes(currentLetter)) i = len;
+  }
+
+  recognizer.onresult = function (event) {
+    const result = event.results[event.resultIndex];
+    if (result.isFinal) {
+      speechHint.textContent = "";
+      speechHint.id = "off-speech-hint_by-Nikola-Ver";
+      let text = result[0].transcript.toLowerCase();
+      if (text[0] !== " ") text = " " + text;
+      if (!controlCommands(text, entryFieldText)) {
+        if (
+          text != " stop recognizing" &&
+          text != " перестать распознавать" &&
+          !recognizerFlag
+        ) {
+          try {
+            const sel = window.getSelection();
+            const range = sel.getRangeAt(0);
+            range.insertNode(document.createTextNode(text));
+            range.setStart(entryFieldText, range.endOffset);
+            range.collapse(true);
+            sel.removeAllRanges();
+            sel.addRange(range);
+            if (flagContenteditable) {
+              entryObj.innerHTML = entryFieldText.innerHTML;
+            } else {
+              entryObj.value = entryFieldText.innerHTML
+                .replace(/\<br\>/gi, "\n")
+                .replace(/\&nbsp\;/gi, " ");
+            }
+          } catch {}
+        } else {
+          recognizer.stop();
+          recognizerFlag = true;
+        }
+      }
+    } else {
+      speechHint.id = "on-speech-hint_by-Nikola-Ver";
+      speechHint.textContent = result[0].transcript.toLowerCase();
+    }
+  };
+
+  currentRecognizer = recognizer;
+  recognizer.start();
+}
+
+function getSelectionCoords(flag) {
+  let win = window;
+  let doc = win.document;
+
+  let x = 0;
+  let y = 0;
+
+  let range, rect;
+  let sel = win.getSelection();
+  range = sel.getRangeAt(0).cloneRange();
+
+  let currentWord = "";
+  if (flag) {
+    let endPos = range.startOffset;
+    let text = range.commonAncestorContainer.textContent;
+    let startPos = endPos - 1;
+    while (
+      startPos >= 0 &&
+      text[startPos] != " " &&
+      text[startPos] != "&nbsp;" &&
+      text[startPos] != "<br>" &&
+      text[startPos] != "\n" &&
+      text.charCodeAt(startPos) !== 160
+    ) {
+      startPos--;
+    }
+    if (startPos + 1 !== endPos) currentWord = text.slice(startPos + 1, endPos);
+  }
+
+  let span = doc.createElement("span");
+  span.appendChild(doc.createTextNode("\u200b"));
+  range.insertNode(span);
+  [rect] = span.getClientRects();
+  x = rect.left;
+  y = rect.top;
+  let spanParent = span.parentNode;
+  spanParent.removeChild(span);
+  spanParent.normalize();
+
+  return [{ x: x, y: y }, currentWord];
+}
+
+function searchWords(currentWord) {
+  let left = 0,
+    right = dictionary.length - 1,
+    step;
+  while (left <= right) {
+    step = (left + right) >>> 1;
+    if (dictionary[step].word.indexOf(currentWord) === 0) return step;
+    else if (currentWord < dictionary[step].word) right = step - 1;
+    else left = step + 1;
+  }
+
+  return null;
+}
+
+function searchWordsToAddOrDel(currentWord) {
+  let left = 0,
+    right = dictionary.length - 1,
+    step;
+  while (left <= right) {
+    step = (left + right) >>> 1;
+    if (dictionary[step].word === currentWord) return step;
+    else if (currentWord < dictionary[step].word) right = step - 1;
+    else left = step + 1;
+  }
+
+  return null;
+}
+
+function insertWord(newWord) {
+  function sortedIndex(array, value) {
+    let low = 0,
+      high = array.length;
+
+    while (low < high) {
+      let mid = (low + high) >>> 1;
+      if (array[mid].word < value) low = mid + 1;
+      else high = mid;
+    }
+    return low;
+  }
+
+  if (searchWordsToAddOrDel(newWord) === null) {
+    memory += newWord.length * 4;
+
+    dictionary.splice(sortedIndex(dictionary, newWord), 0, {
+      word: newWord,
+      callQuantity: 1,
+    });
+
+    if (MAX_MEMORY < memory) flagNeedSave = false;
+  }
+}
+
+function hintFieldFunc(obj, rect, flagSearch, styleObj) {
+  let [coordinates, currentWord] = getSelectionCoords(flagSearch);
+
+  if (flagSearch) {
+    currentQuantityOfLetters = currentWord.length;
+    if (currentQuantityOfLetters) {
+      if (flagNeedToSearch) {
+        foundWordPos = searchWords(currentWord);
+
+        if (foundWordPos !== null) {
+          let wordsToHint = document.getElementsByClassName("word-to-hint");
+          (startPosHint = foundWordPos), (endPosHint = foundWordPos + 1);
+
+          while (
+            startPosHint >= 0 &&
+            dictionary[startPosHint].word.indexOf(currentWord) === 0
+          )
+            startPosHint--;
+          startPosHint++;
+          while (
+            endPosHint < dictionary.length &&
+            dictionary[endPosHint].word.indexOf(currentWord) === 0
+          )
+            endPosHint++;
+          arryaOfWordsToHint = dictionary
+            .slice(startPosHint, endPosHint)
+            .sort(
+              ({ callQuantity: current }, { callQuantity: next }) =>
+                next - current
+            );
+          for (let i = 0; i < quantityWordsToHint; i++) {
+            if (i + currentWordHint < endPosHint - startPosHint)
+              wordsToHint[i].textContent =
+                arryaOfWordsToHint[i + currentWordHint].word;
+            else wordsToHint[i].textContent = "";
+            if (i === wordsToHintPos) wordsToHint[i].id = "active-hint";
+            else wordsToHint[i].id = "";
+          }
+
+          obj.style.display = "";
+          flagHint = true;
+        } else {
+          obj.style.display = "none";
+          flagHint = false;
+        }
+      } else {
+        let wordsToHint = document.getElementsByClassName("word-to-hint");
+        if (addNewWordInHintField > 0) {
+          for (let i = 0; i < quantityWordsToHint - 1; i++)
+            wordsToHint[i].textContent = wordsToHint[i + 1].textContent;
+          wordsToHint[quantityWordsToHint - 1].textContent =
+            arryaOfWordsToHint[currentWordHint].word;
+        }
+
+        if (addNewWordInHintField < 0) {
+          for (let i = quantityWordsToHint - 1; i > 0; i--)
+            wordsToHint[i].textContent = wordsToHint[i - 1].textContent;
+          wordsToHint[0].textContent = arryaOfWordsToHint[currentWordHint].word;
+        }
+
+        for (let i = 0; i < quantityWordsToHint; i++) {
+          if (i === wordsToHintPos) wordsToHint[i].id = "active-hint";
+          else wordsToHint[i].id = "";
+        }
+      }
+    } else {
+      obj.style.display = "none";
+      flagHint = false;
+    }
+  }
+
+  let style = getComputedStyle(styleObj);
+  let heightObj = getComputedStyle(obj).height;
+  obj.style.left =
+    "calc(" +
+    String(coordinates.x - rect.left) +
+    "px" +
+    " - " +
+    style.paddingLeft +
+    " - " +
+    style.borderLeftWidth +
+    ")";
+  if (
+    coordinates.y +
+      parseFloat(fontSize) -
+      parseFloat(style.paddingTop) -
+      parseFloat(style.borderTopWidth) +
+      parseFloat(heightObj) <
+    parseFloat(document.documentElement.clientHeight) +
+      parseFloat(window.scrollY)
+  )
+    obj.style.top =
+      "calc(" +
+      String(coordinates.y - rect.top) +
+      "px" +
+      " + " +
+      fontSize +
+      " - " +
+      style.paddingTop +
+      " - " +
+      style.borderTopWidth +
+      ")";
+  else
+    obj.style.top =
+      "calc(" +
+      String(coordinates.y - rect.top - parseFloat(heightObj)) +
+      "px" +
+      " - " +
+      style.paddingTop +
+      " - " +
+      style.borderTopWidth +
+      ")";
+}
+
+function changeFocucPos(
+  focusObject,
+  start,
+  end,
+  range,
+  sel,
+  childStart = 0,
+  childEnd = 0
+) {
+  try {
+    while (
+      focusObject.childNodes[childStart] !== undefined &&
+      start > (focusObject.childNodes[childStart].length || 1)
+    ) {
+      start -= focusObject.childNodes[childStart].length
+        ? focusObject.childNodes[childStart].length
+        : 1;
+      childStart++;
+    }
+
+    while (
+      focusObject.childNodes[childEnd] !== undefined &&
+      end > (focusObject.childNodes[childEnd].length || 1)
+    ) {
+      end -= focusObject.childNodes[childEnd].length
+        ? focusObject.childNodes[childEnd].length
+        : 1;
+      childEnd++;
+    }
+
+    range.setStart(focusObject.childNodes[childStart], start);
+    range.setEnd(focusObject.childNodes[childEnd], end);
+    range.collapse(true);
+    sel.removeAllRanges();
+    sel.addRange(range);
+  } catch {}
+}
+
+function focusOff(obj, flagNeedFocus) {
+  entryObj && (entryObj.style.webkitTextFillColor = "");
+  if (obj) {
+    let entryFieldText = document.getElementById("text-field_by-Nikola-Ver");
+    if (entryFieldText && flagNeedFocus)
+      if (flagContenteditable) {
+        let sel = window.getSelection();
+        let range = sel.getRangeAt(0);
+        entryObj.focus();
+
+        let start = range.startOffset;
+        let end = range.endOffset;
+        let childStart = 0;
+        let childEnd = 0;
+
+        entryFieldText.childNodes.forEach((element, index) => {
+          if (element === range.startContainer) childStart = index;
+          if (element === range.endContainer) childEnd = index;
+        });
+
+        sel = window.getSelection();
+        range = sel.getRangeAt(0);
+
+        changeFocucPos(entryObj, start, end, range, sel, childStart, childEnd);
+      } else {
+        let sel = window.getSelection();
+        let range = sel.getRangeAt(0);
+        entryObj.focus();
+
+        let start = range.startOffset;
+        let end = range.endOffset;
+        let foundStart = false;
+        let foundEnd = false;
+
+        entryFieldText.childNodes.forEach((element) => {
+          if (element === range.startContainer) foundStart = true;
+          if (!foundStart) start += element.length ? element.length : 1;
+
+          if (element === range.endContainer) foundEnd = true;
+          if (!foundEnd) end += element.length ? element.length : 1;
+        });
+
+        entryObj.selectionStart = start;
+        entryObj.selectionEnd = end;
+      }
+
+    recognizerFlag = true;
+    if (currentRecognizer) {
+      currentRecognizer.stop();
+      currentRecognizer = null;
+    }
+    obj.remove();
+  }
+}
+
+function resizeTextArea(entryField, entryFieldText, obj) {
+  let rect = obj.getBoundingClientRect();
+  let style = getComputedStyle(obj);
+
+  NEED_STYLE_ELEMENTS.forEach((e) => {
+    entryFieldText.style[e] = style[e];
+  });
+
+  if (obj.tagName.toLowerCase() === "input") {
+    if (style.overflow === "visible") entryFieldText.style.overflow = "hidden";
+    if (style.whiteSpace === "normal")
+      entryFieldText.style.whiteSpace = "nowrap";
+    entryFieldText.style.alignItems = "center";
+    entryFieldText.style.display = "flex";
+  }
+
+  obj.scrollTo(entryFieldText.scrollLeft, entryFieldText.scrollTop);
+  entryField.style.width =
+    "calc(" +
+    rect.width +
+    "px" +
+    " - " +
+    style.paddingLeft +
+    " - " +
+    style.paddingRight +
+    " - " +
+    style.borderLeftWidth +
+    " - " +
+    style.borderRightWidth +
+    ")";
+  entryField.style.height =
+    "calc(" +
+    rect.height +
+    "px" +
+    " - " +
+    style.paddingTop +
+    " - " +
+    style.paddingBottom +
+    " - " +
+    style.borderTopWidth +
+    " - " +
+    style.borderBottomWidth +
+    ")";
+  entryField.style.top =
+    "calc(" +
+    rect.top +
+    "px" +
+    " + " +
+    style.paddingTop +
+    " + " +
+    style.borderTopWidth +
+    ")";
+  entryField.style.left =
+    "calc(" +
+    rect.left +
+    "px" +
+    " + " +
+    style.paddingLeft +
+    " + " +
+    style.borderLeftWidth +
+    ")";
+
+  fontSize = style.fontSize;
+  if (flagAutoFontSize) {
+    document.documentElement.style.setProperty("--font-size", fontSize);
+    document.documentElement.style.setProperty("--font-size-active", fontSize);
+  }
+}
+
+function focusOn(obj) {
+  let entryField = null;
+  let flagCancel = false;
+  flagContenteditable = obj.getAttribute("contenteditable");
+
+  if (
+    (flagContenteditable ||
+      TEXT_AREA_OBJ.includes(obj.tagName.toLowerCase())) &&
+    (!TEXT_AREA_OBJ_EXCEPT.includes(obj.className.toLowerCase()) ||
+      !TEXT_AREA_OBJ_EXCEPT.includes(obj.id.toLowerCase()))
+  ) {
+    entryObj = obj;
+    entryField = document.createElement("div");
+    entryField.id = "entry-field_by-Nikola-Ver";
+
+    let entryFieldText = document.createElement("div");
+    entryFieldText.setAttribute("contenteditable", "true");
+    // entryFieldText.setAttribute("spellcheck", "false");
+    entryFieldText.id = "text-field_by-Nikola-Ver";
+
+    if (flagContenteditable) entryFieldText.innerHTML = obj.innerHTML;
+    else entryFieldText.innerHTML = obj.value.replace(/\n/gi, "<br>");
+
+    let entryFieldContain = document.createElement("div");
+    entryFieldContain.id = "contain_by-Nikola-Ver";
+
+    let rect = obj.getBoundingClientRect();
+    entryFieldText.onscroll = (e) => {
+      obj.scrollTo(entryFieldText.scrollLeft, entryFieldText.scrollTop);
+    };
+    resizeTextArea(entryField, entryFieldText, obj);
+
+    let hintField = document.createElement("div");
+    hintField.id = "hint-field_by-Nikola-Ver";
+    hintField.style.display = "none";
+
+    for (let i = 0; i < quantityWordsToHint; i++) {
+      let wordToHint = document.createElement("div");
+      wordToHint.className = "word-to-hint";
+      hintField.appendChild(wordToHint);
+    }
+
+    entryFieldText.addEventListener("keypress", (e) => {
+      const letter = String.fromCharCode(e.keyCode || e.charCode).toLowerCase();
+      if (letters.includes(letter)) currentLetter = letter;
+      if (currentRecognizer && !recognizerFlag) {
+        speechHint.id = "off-speech-hint_by-Nikola-Ver";
+        speechHint.textContent = "";
+        currentRecognizer.stop();
+        currentRecognizer = null;
+        recognizeSpeech(entryFieldText);
+      }
+      obj.dispatchEvent(new KeyboardEvent("keypress", e));
+    });
+
+    entryFieldText.addEventListener("keydown", (e) => {
+      if (e.shiftKey && e.ctrlKey && e.altKey) {
+        let newWord = document.getSelection().toString();
+        if (newWord.length > 0) insertWord(newWord);
+      }
+
+      if (e.keyCode === 118)
+        if (recognizerFlag) {
+          recognizerFlag = false;
+          recognizeSpeech(entryFieldText);
+        } else {
+          recognizerFlag = true;
+          if (currentRecognizer) {
+            currentRecognizer.stop();
+            currentRecognizer = null;
+          }
+        }
+
+      if (
+        (!e.shiftKey && e.keyCode === 13) ||
+        e.keyCode === 27 ||
+        e.keyCode === 9
+      ) {
+        if (flagHint) {
+          hintField.style.display = "none";
+          if (e.keyCode === 13 || e.keyCode === 9) {
+            let word = arryaOfWordsToHint[currentWordHint].word;
+            arryaOfWordsToHint[currentWordHint].callQuantity++;
+            let sel = window.getSelection();
+            let range = sel.getRangeAt(0);
+            range.insertNode(
+              document.createTextNode(
+                word.slice(currentQuantityOfLetters, word.length)
+              )
+            );
+            range.setStart(entryFieldText, range.endOffset);
+            range.collapse(true);
+            sel.removeAllRanges();
+            sel.addRange(range);
+          }
+          flagHint = false;
+          flagCancel = true;
+          e.preventDefault();
+          return;
+        } else focusOff(entryField, false);
+      }
+
+      if (e.keyCode === 46)
+        if (flagHint && currentWordHint < arryaOfWordsToHint.length) {
+          let word = arryaOfWordsToHint[currentWordHint].word;
+          dictionary.splice(searchWordsToAddOrDel(word), 1);
+          arryaOfWordsToHint.splice(currentWordHint, 1);
+          let wordsToHint = document.getElementsByClassName("word-to-hint");
+          let lenArrayWords = arryaOfWordsToHint.length;
+          let len = wordsToHint.length;
+          for (let i = wordsToHintPos; i < len; i++) {
+            if (i + currentWordHint - wordsToHintPos < lenArrayWords)
+              wordsToHint[i].textContent =
+                arryaOfWordsToHint[i + currentWordHint - wordsToHintPos].word;
+            else wordsToHint[i].textContent = "";
+          }
+          e.preventDefault();
+          return;
+        } else if (arryaOfWordsToHint.length === 0) {
+          flagCancel = true;
+          flagHint = false;
+          let temp = document.getElementById("hint-field_by-Nikola-Ver");
+          temp.style.display = "none";
+        }
+
+      flagNeedToSearch = true;
+      if (flagHint && (e.keyCode === 38 || e.keyCode === 40)) {
+        addNewWordInHintField = 0;
+        if (e.keyCode === 38) {
+          if (currentWordHint > 0) {
+            currentWordHint--;
+            if (wordsToHintPos > 0) wordsToHintPos--;
+            else addNewWordInHintField = -1;
+          }
+        } else {
+          if (
+            arryaOfWordsToHint &&
+            currentWordHint < arryaOfWordsToHint.length - 1
+          ) {
+            currentWordHint++;
+            if (wordsToHintPos + 1 < quantityWordsToHint) wordsToHintPos++;
+            else addNewWordInHintField = 1;
+          }
+        }
+        flagNeedToSearch = false;
+        e.preventDefault();
+        return;
+      } else {
+        wordsToHintPos = 0;
+        currentWordHint = 0;
+      }
+
+      obj.dispatchEvent(new KeyboardEvent("keydown", e));
+      hintFieldFunc(hintField, rect, false, obj);
+    });
+
+    entryFieldText.addEventListener("keyup", (e) => {
+      if (flagContenteditable) {
+        obj.innerHTML = entryFieldText.innerHTML;
+      } else {
+        obj.value = entryFieldText.innerHTML
+          .replace(/\<br\>/gi, "\n")
+          .replace(/\&nbsp\;/gi, " ");
+      }
+
+      rect = obj.getBoundingClientRect();
+
+      if (
+        !flagHint &&
+        [
+          9,
+          16,
+          17,
+          18,
+          20,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          45,
+          91,
+          93,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+        ].includes(e.keyCode)
+      ) {
+        flagCancel = true;
+        if (e.ctrlKey && e.keyCode === 32) {
+          flagCancel = false;
+        }
+      }
+
+      hintFieldFunc(hintField, rect, !flagCancel, obj);
+      flagCancel = false;
+      obj.dispatchEvent(new KeyboardEvent("keyup", e));
+      resizeTextArea(entryField, entryFieldText, obj);
+    });
+
+    hintField.className = "object-Nikola-Ver";
+    entryFieldText.className = "object-Nikola-Ver";
+    entryField.className = "object-Nikola-Ver";
+
+    entryFieldContain.appendChild(entryFieldText);
+    entryFieldContain.appendChild(hintField);
+    entryField.appendChild(entryFieldContain);
+    document.body.appendChild(entryField);
+    let sel = window.getSelection();
+    let range = sel.getRangeAt(0);
+    entryFieldText.focus();
+
+    entryFieldText.onfocusout = (e) => {
+      if (!flagHint) focusOff(prevObj);
+    };
+
+    if (flagContenteditable) {
+      let start = range.startOffset;
+      let end = range.endOffset;
+      let childStart = 0;
+      let childEnd = 0;
+
+      obj.childNodes.forEach((element, index) => {
+        if (element === range.startContainer) childStart = index;
+        if (element === range.endContainer) childEnd = index;
+      });
+
+      sel = window.getSelection();
+      range = sel.getRangeAt(0);
+
+      changeFocucPos(
+        entryFieldText,
+        start,
+        end,
+        range,
+        sel,
+        childStart,
+        childEnd
+      );
+    } else {
+      sel = window.getSelection();
+      if (sel.baseNode) {
+        range = sel.getRangeAt(0);
+
+        changeFocucPos(
+          entryFieldText,
+          obj.selectionStart,
+          obj.selectionEnd,
+          range,
+          sel
+        );
+      }
+    }
+    obj.style.webkitTextFillColor = "transparent";
+
+    window.onresize = () => {
+      resizeTextArea(entryField, entryFieldText, obj);
+    };
+
+    window.onscroll = () => {
+      resizeTextArea(entryField, entryFieldText, obj);
+    };
+  }
+
+  return entryField;
+}
+
+document.onclick = (e) => {
+  breaker === 1 && changeFocus(e.target);
+};
+
+document.onkeydown = (e) => {
+  if (e.keyCode === 113) {
+    breaker++;
+    if (breaker === 3) {
+      if (prevObj) {
+        focusOff(prevObj, true);
+      }
+      breaker = 0;
+    }
+  }
+
+  if (breaker === 1) {
+    if (
+      !document.getElementById("entry-field_by-Nikola-Ver") ||
+      countOfMistakes > 1
+    ) {
+      countOfMistakes = 0;
+      changeFocus(document.activeElement);
+    } else if ("text-field_by-Nikola-Ver" === e.target.id) {
+      countOfMistakes = 0;
+    } else {
+      countOfMistakes++;
+    }
+  }
+};
+
+function changeFocus(currentObject) {
+  if (currentObject.className !== "object-Nikola-Ver") {
+    if (currentObject.className === "word-to-hint") {
+      let word = currentObject.textContent;
+      let sel = window.getSelection();
+      let range = sel.getRangeAt(0);
+      arryaOfWordsToHint.forEach((e) => {
+        if (word === e.word) e.callQuantity++;
+      });
+      range.insertNode(
+        document.createTextNode(
+          word.slice(currentQuantityOfLetters, word.length)
+        )
+      );
+      let entryFieldText = document.getElementById("text-field_by-Nikola-Ver");
+      range.setStart(entryFieldText, range.endOffset);
+      range.collapse(true);
+      sel.removeAllRanges();
+      sel.addRange(range);
+
+      if (flagContenteditable) {
+        entryObj.innerHTML = entryFieldText.innerHTML;
+      } else {
+        entryObj.value = entryFieldText.innerHTML
+          .replace(/\<br\>/gi, "\n")
+          .replace(/\&nbsp\;/gi, " ");
+      }
+
+      flagHint = false;
+      let temp = document.getElementById("hint-field_by-Nikola-Ver");
+      temp.style.display = "none";
+    } else {
+      focusOff(prevObj, false);
+      prevObj = focusOn(currentObject);
+    }
+  } else {
+    flagHint = false;
+    let temp = document.getElementById("hint-field_by-Nikola-Ver");
+    temp.style.display = "none";
+  }
+}
+
+function changeHintFieldOrAddNewWords(key, value) {
+  if (value && value !== "null")
+    if (key === "quantityHints") {
+      localStorage.setItem(key, value);
+      quantityWordsToHint = value;
+      let hintField = document.getElementById("hint-field_by-Nikola-Ver");
+      if (hintField) {
+        let temp = document.getElementsByClassName("word-to-hint");
+        let len = temp.length;
+        for (let i = 0; i < len; i++) temp[0].remove();
+
+        if (wordsToHintPos > quantityWordsToHint)
+          wordsToHintPos = quantityWordsToHint - 1;
+
+        for (let i = 0; i < quantityWordsToHint; i++) {
+          let wordToHint = document.createElement("div");
+          wordToHint.className = "word-to-hint";
+          if (i === wordsToHintPos) wordToHint.id = "active-hint";
+          hintField.appendChild(wordToHint);
+        }
+      }
+    } else if (key === "addNewBase") {
+      loadBase.click();
+    } else if (key === "switch") {
+      if (breaker === 0) breaker = 1;
+      else {
+        if (prevObj) {
+          focusOff(prevObj, true);
+        }
+        breaker = 0;
+      }
+    } else if (key.indexOf("dictionary") === 0) {
+      dictionary = JSON.parse(value);
+      dictionary = dictionary.sort((current, next) => {
+        if (current.word > next.word) return 1;
+        if (current.word < next.word) return -1;
+        return 0;
+      });
+    } else {
+      document.documentElement.style.setProperty(key, value);
+      localStorage.setItem(key, value);
+    }
+}
+
+chrome.extension.onMessage.addListener((obj) => {
+  for (let key in obj) changeHintFieldOrAddNewWords(key, obj[key]);
+});
+
+(function () {
+  const arrayOfCssValues = [
+    "--main-color-1",
+    "--main-color-2",
+    "--selection-background-color",
+    "--selection-font-color",
+    "--hint-background-active-color",
+    "--hint-background-color",
+    "--hint-font-active-color",
+    "--hint-font-color",
+    "--font-size",
+    "--font-size-active",
+    "--shadow-hint",
+    "quantityHints",
+    "--selection-shadow",
+  ];
+
+  arrayOfCssValues.forEach((e) => {
+    changeHintFieldOrAddNewWords(e, localStorage.getItem(e));
+  });
+
+  let key = "dictionary";
+  changeHintFieldOrAddNewWords(key, localStorage.getItem(key));
+})();
+
+window.onbeforeunload = (e) => {
+  if (flagNeedSave)
+    localStorage.setItem("dictionary", JSON.stringify(dictionary));
+  else {
+    let newWords = dictionary.filter((e) => e.callQuantity > 0);
+    if (currentMemory(newWords))
+      localStorage.setItem("dictionary", JSON.stringify(newWords));
+  }
+};
