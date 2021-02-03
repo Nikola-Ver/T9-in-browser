@@ -554,7 +554,8 @@ function resizeTextArea(entryField, entryFieldText, obj) {
 function focusOn(obj) {
   let entryField = null;
   let flagCancel = false;
-  flagContenteditable = obj.getAttribute("contenteditable");
+  flagContenteditable = obj.getAttribute("contenteditable") || 
+                        /write/.exec(getComputedStyle(obj).webkitUserModify);
 
   if (
     (flagContenteditable ||
